@@ -1,0 +1,54 @@
+laravel_project/
+├── app/
+│   └── Http/
+│       └── Controllers/
+│           ├── AuthController.php           // Handles login, registration, etc.
+│           ├── EmployeeController.php      // Manages employee-related functionality
+│           ├── CustomerController.php      // Manages customer-related functionality
+│           ├── FinancialController.php     // Handles disbursements/recoveries
+│           ├── SettingsController.php      // Manages settings
+│           └── DashboardController.php     // Manages the dashboard
+├── public/
+│   ├── assets/                            // Static assets (images, icons, etc.)
+│   ├── css/
+│   └── js/
+├── resources/
+│   ├── views/
+│   │   ├── auth/
+│   │   │   ├── login.blade.php
+│   │   │   ├── register.blade.php
+│   │   │   └── forgot-password.blade.php
+│   │   ├── dashboard/
+│   │   │   ├── admin-dashboard.blade.php
+│   │   │   └── employee-dashboard.blade.php
+│   │   ├── customers/
+│   │   │   ├── customer-list.blade.php
+│   │   │   └── customer-details.blade.php
+│   │   ├── employees/
+│   │   │   ├── employee-list.blade.php
+│   │   │   └── employee-form.blade.php
+│   │   ├── financial/
+│   │   │   ├── disbursements.blade.php
+│   │   │   └── recoveries.blade.php
+│   │   ├── settings/
+│   │   │   └── settings-page.blade.php
+│   │   ├── shared/
+│   │   │   ├── navbar.blade.php
+│   │   │   ├── sidebar.blade.php
+│   │   │   └── footer.blade.php
+│   │   └── welcome.blade.php               // Main entry point of the app
+│   ├── lang/
+│   ├── sass/                              // SCSS/CSS files
+│   └── js/                                // JavaScript files
+│       ├── app.js                         // JS for frontend interactions
+│       └── helpers.js                     // Utility functions
+├── routes/
+│   ├── web.php                            // Define routes for the frontend
+├── storage/
+├── .env
+├── artisan
+├── composer.json
+├── package.json
+├── webpack.mix.js                         // For compiling assets like JS and CSS
+└── public/
+    └── index.php

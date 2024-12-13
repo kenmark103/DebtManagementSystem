@@ -18,9 +18,9 @@ return new class extends Migration
             $table->foreignId('rm_id')->constrained('employees')->onDelete('cascade');
             $table->string('status')->default('Pending'); // Default to Pending
             $table->decimal('amount_taken', 15, 2);
-            $table->date('date_taken')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('date_taken'); // Default to current date
             $table->decimal('expected_pay_back', 15, 2)->default(0); // Default to zero
-            $table->date('completion_date')->nullable();
+            $table->timestamp('completion_date')->nullable();
             $table->decimal('processing_fee', 15, 2)->default(0); // Default to zero
             $table->timestamps();
         });

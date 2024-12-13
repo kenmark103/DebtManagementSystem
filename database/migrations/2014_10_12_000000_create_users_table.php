@@ -18,10 +18,9 @@ return new class extends Migration
             $table->string('position');
             $table->string('department')->nullable();
             $table->string('contact')->nullable();
-            $table->date('hire_date')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('hire_date'); // Default to current date
             $table->string('status')->default('Active'); // Default status
             $table->string('email')->unique();
-            $table->foreignId('role_id')->nullable()->constrained('roles')->onDelete('cascade');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

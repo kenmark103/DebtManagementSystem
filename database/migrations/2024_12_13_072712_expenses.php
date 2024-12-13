@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
-            $table->date('date')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('date'); // Default to current date
             $table->decimal('amount', 15, 2);
             $table->foreignId('expense_type_id')->constrained('expense_sources')->onDelete('cascade');
             $table->text('description')->nullable();

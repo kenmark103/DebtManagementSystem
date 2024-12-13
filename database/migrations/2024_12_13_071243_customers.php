@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('contact')->nullable();
             $table->string('address')->nullable();
-            $table->date('date_joined')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('date_joined'); // Default to current date
             $table->string('status')->default('Active'); // Default status
             $table->timestamps();
         });

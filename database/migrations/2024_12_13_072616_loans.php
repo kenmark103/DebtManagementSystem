@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreignId('customer_id')->constrained()->onDelete('cascade');
             $table->decimal('amount_issued', 15, 2);
             $table->decimal('interest_rate', 5, 2)->default(0); // Default interest rate
-            $table->date('repayment_start_date')->default(DB::raw('CURRENT_DATE')); // Default to current date
-            $table->date('repayment_end_date')->nullable();
+            $table->timestamp('repayment_start_date');
+            $table->timestamp('repayment_end_date')->nullable();
             $table->enum('loan_status', ['Active', 'Paid', 'Defaulted'])->default('Active'); // Default to Active
             $table->decimal('total_payable', 15, 2)->default(0); // Default total payable
             $table->decimal('remaining_balance', 15, 2)->default(0); // Default balance

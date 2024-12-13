@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->string('voucher_no')->unique();
-            $table->date('date')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('date'); // Default to current date
             $table->string('payee');
             $table->text('description')->nullable();
             $table->enum('type', ['IN', 'OUT', 'TRANSFER'])->default('IN'); // Default type

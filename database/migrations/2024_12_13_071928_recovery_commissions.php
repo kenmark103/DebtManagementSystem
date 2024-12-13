@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('recovery_commissions', function (Blueprint $table) {
             $table->id();
-            $table->date('date')->default(DB::raw('CURRENT_DATE')); // Default to current date
+            $table->timestamp('date'); // Default to current date
             $table->foreignId('customer_id')->constrained()->onDelete('cascade');
             $table->string('bad_book_aging');
             $table->decimal('current_bad_book', 15, 2);

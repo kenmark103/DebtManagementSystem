@@ -1,4 +1,4 @@
-frontend/
+ frontend/
 ├── src/
 │   ├── api/
 │   │   ├── auth.js       // API calls for authentication

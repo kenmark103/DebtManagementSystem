@@ -1,0 +1,219 @@
+{
+  "menu": [
+
+    {
+      "url": "/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ri-home-smile-line",
+      "slug": "dashboard"
+    },
+    
+    {
+      "menuHeader": "Financials"
+    },
+    {
+      "url": "/dashboard",
+      "name": "Injections",
+      "icon": "menu-icon tf-icons ri-mail-open-line",
+      "slug": "injections"
+    },
+    {
+      "url": "/dashboard",
+      "name": "Disbursements",
+      "icon": "menu-icon tf-icons ri-wechat-line",
+      "slug": "disbursements"
+    },
+    {
+      "url": "/dashboard",
+      "name": "Recoveries",
+      "icon": "menu-icon tf-icons ri-calendar-line",
+      "slug": "recoveries",
+      "target": "_blank",
+      "badge": [
+        "label-primary fs-tiny",
+        "Pro"
+      ]
+    },
+    {
+      "url": "/dashboard",
+      "name": "Overdue",
+      "icon": "menu-icon tf-icons ri-calendar-line",
+      "slug": "recovery-commissions"
+    },
+    {
+      "url": "/dashboard",
+      "name": "Commissions",
+      "icon": "menu-icon tf-icons ri-calendar-line",
+      "slug": "recovery-commissions"
+    },
+
+    {
+      "name": "Expense Management",
+      "icon": "menu-icon tf-icons ri-file-copy-line",
+      "slug": "expense-management",
+      "submenu": [
+        {
+          "url": "/dashboard",
+          "name": "View Expenses",
+          "slug": "view-expenses"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Add Expense",
+          "slug": "add-expense"
+        }
+      ]
+    },
+
+    {
+      "menuHeader": "User Management"
+    },
+    {
+      "name": "Employee Management",
+      "icon": "menu-icon tf-icons ri-layout-2-line",
+      "slug": "employee-management",
+      "submenu": [
+        {
+          "url": "/employees/create",
+          "name": "View Employee",
+          "slug": "new-employee"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Employee List",
+          "slug": "employee-list"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Roles and Permissions",
+          "slug": "roles-permissions"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Employee Reports",
+          "slug": "employee-list"
+        }
+      ]
+    },
+    {
+      "name": "Customer Management",
+      "icon": "menu-icon tf-icons ri-file-copy-line",
+      "slug": "customer-management",
+      "submenu": [
+        {
+          "url": "/customers/create",
+          "name": "Add Customer",
+          "slug": "add-customer"
+        },
+        {
+          "url": "/customers/",
+          "name": "Customer Lists",
+          "slug": "customer-list"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Customer Reports",
+          "slug": "customer-list"
+        }
+      ]
+    },
+
+    {
+      "menuHeader": "Accounts"
+    },
+    {
+      "name": "Source Category",
+      "icon": "menu-icon tf-icons ri-layout-2-line",
+      "slug": "source-category",
+      "submenu": [
+        {
+          "url": "/dashboard",
+          "name": "View Account Source",
+          "slug": "view-account-source"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Add New Source",
+          "slug": "add-new-source"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Profit Income",
+          "slug": "profit-income"
+        }
+      ]
+    },
+
+    {
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ri-layout-2-line",
+      "slug": "source-category",
+      "submenu": [
+        {
+          "url": "/dashboard",
+          "name": "View Account Source",
+          "slug": "view-account-source"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Add New Source",
+          "slug": "add-new-source"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Profit Income",
+          "slug": "profit-income"
+        }
+      ]
+    },
+
+    {
+      "url": "/dashboard",
+      "name": "Cashflow Records",
+      "icon": "menu-icon tf-icons ri-mail-open-line",
+      "slug": "cashflow-records",
+      "badge": [
+        "label-primary fs-tiny",
+        "Pro"
+      ]
+    },
+
+    {
+      "menuHeader": "Misc"
+    },
+    {
+      "url": "/dashboard",
+      "icon": "menu-icon tf-icons ri-lifebuoy-line",
+      "name": "Support",
+      "slug": "support"
+    },
+    {
+      "url": "/dashboard",
+      "icon": "menu-icon tf-icons ri-lifebuoy-line",
+      "name": "Audit logs",
+      "slug": "support"
+    },
+    {
+      "name": "Account Settings",
+      "icon": "menu-icon tf-icons ri-layout-left-line",
+      "slug": "account-settings",
+      "submenu": [
+        {
+          "url": "/dashboard",
+          "name": "Account",
+          "slug": "account-settings-account"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Notifications",
+          "slug": "account-settings-notifications"
+        },
+        {
+          "url": "/dashboard",
+          "name": "Connections",
+          "slug": "account-settings-connections"
+        }
+      ]
+    }
+  ]
+}

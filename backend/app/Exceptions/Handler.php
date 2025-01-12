@@ -4,6 +4,8 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Illuminate\Auth\AuthenticationException;
+use Illuminate\Session\TokenMismatchException;
 
 class Handler extends ExceptionHandler
 {
@@ -27,4 +29,18 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $exception)
+{
+    if ($exception instanceof AuthenticationException) {
+        return redirect()->route('auth-login-basic');
+    }
+
+    if ($exception instanceof TokenMismatchException) {
+        return redirect()->route('auth-login-basic')->with('error', 'Session expired, please log in again.');
+    }
+
+    return parent::render($request, $exception);
+}
+
 }

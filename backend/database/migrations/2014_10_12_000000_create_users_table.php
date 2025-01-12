@@ -14,11 +14,9 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('position');
+            $table->string('username');
             $table->string('department')->nullable();
             $table->string('contact')->nullable();
-            $table->timestamp('hire_date'); // Default to current date
             $table->string('status')->default('Active'); // Default status
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

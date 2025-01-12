@@ -18,13 +18,12 @@ class Employee extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
-        'position',       // Job position
+        'role_id',       // Job position
         'department',     // Department name
         'contact',        // Contact information
-        'hire_date',      // Date of hire
         'status',         // Employment status
     ];
 
